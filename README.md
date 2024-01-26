@@ -1,7 +1,7 @@
 # Betfair Betting Bot
 An example project illustrating how to build & deploy a trading bot at Betfair. Built in [Flumine](https://github.com/betcode-org/flumine).
 
-More information available at [BowTiedBettor - Building & Deploying a Betfair Bot](ADD_LINK_HERE).
+More information available at [BowTiedBettor - Building & Deploying a Betfair Bot](https://www.blog.bowtiedbettor.com/p/building-and-deploying-a-betfair).
 
 # Idea/Angle
 Exploit the new 'Betfair Price Beacon'-feature. [Beacon FAQ](https://support.betfair.com/app/answers/detail/a_id/10315/).
@@ -14,7 +14,7 @@ Exploit the new 'Betfair Price Beacon'-feature. [Beacon FAQ](https://support.bet
 - **bot.py** sets required parameters & launches the bot.
 
 # Strategy Design
-Detailed breakdown available at [INSERT LINK TO BLOG].
+Detailed breakdown available at [BowTiedBettor - Building & Deploying a Betfair Bot](https://www.blog.bowtiedbettor.com/p/building-and-deploying-a-betfair).
 
 # How To Get It Up & Running
 1. Clone the repo. 
