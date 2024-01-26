@@ -7,11 +7,11 @@ More information available at [BowTiedBettor - Building & Deploying a Betfair Bo
 Exploit the new 'Betfair Price Beacon'-feature. [Beacon FAQ](https://support.betfair.com/app/answers/detail/a_id/10315/).
 
 # Code Design
-- tradingroutines.py contains necessary/helpful functions (for instance get_anchor_price for a given horse/object).
+- tradingroutines.py contains necessary/helpful functions, for instance **update_anchor_prices**.
 
-- strategies.py defines the strategy & handles the bot's behaviour/actions.
+- **strategies.py** defines & implements the strategy.
 
-- bot.py sets required parameters & launches the bot.
+- **bot.py** sets required parameters & launches the bot.
 
 # Strategy Design
 Detailed breakdown available at [INSERT LINK TO BLOG].
