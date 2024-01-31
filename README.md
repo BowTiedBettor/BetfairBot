@@ -4,7 +4,7 @@ An example project illustrating how to build & deploy a trading bot at Betfair. 
 More information available at [BowTiedBettor - Building & Deploying a Betfair Bot](https://www.blog.bowtiedbettor.com/p/building-and-deploying-a-betfair).
 
 # Idea/Angle
-Exploit the new 'Betfair Price Beacon'-feature. [Beacon FAQ](https://support.betfair.com/app/answers/detail/a_id/10315/).
+Exploit the new 'Betfair Beacons'-feature. [Beacon FAQ](https://support.betfair.com/app/answers/detail/a_id/10315/).
 
 # Code Design
 - tradingroutines.py contains necessary/helpful functions, for instance **update_anchor_prices**.
