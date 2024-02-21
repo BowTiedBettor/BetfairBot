@@ -3,6 +3,7 @@ from flumine import BaseStrategy
 from flumine.order.trade import Trade
 from flumine.order.order import LimitOrder
 from flumine.markets.market import Market
+from flumine.utils import get_runner_book
 from betfairlightweight.resources import MarketBook
 from tradingroutines import update_anchor_prices, send_to_telegram
 from datetime import datetime, timedelta
@@ -43,6 +44,12 @@ class BetfairBeacons(BaseStrategy):
 
         logger.info(f"Processing Market Book - {market_catalogue.event.name} - {market_catalogue.market_name} - {post_time}")
         for runner_book, runner_info in zip(market_book.runners, market.market_catalogue.runners):
+            if not runner_book.selection_id == runner_info.selection_id:
+                # logger.warning(f"Mismatch between RunnerBook & RunnerCatalogue - {market_catalogue.event.name} - {market_catalogue.market_name} - {post_time} - {runner_book.selection_id} - Selections: {runner_info.selection_id}")
+                runner_book = get_runner_book(market_book, runner_info.selection_id)
+            else: 
+                pass
+                
             # skip scratched horses
             if runner_book.status != 'ACTIVE':
                 continue
